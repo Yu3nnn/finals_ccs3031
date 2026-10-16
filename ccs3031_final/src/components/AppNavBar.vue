@@ -1,27 +1,137 @@
+<template>
+  <div class="navbar">
+    <div class="logo">
+      <img src="@/assets/image/Logo.png" alt=" Logo" />
+      <h3>Kape ni Emman</h3>
+    </div>
+
+    <div class="menu">
+      <RouterLink to="/home">Home</RouterLink>
+      <div class="dropdown">
+        <a @click="scrolltoProductSection('Menu')">Products ⇣</a>
+
+            <div class="submenu">
+            <a @click="scrolltoProductSection('coffe')">Coffe</a>
+            <a @click="scrolltoProductSection('non')">non-coffee</a>
+            <a @click="scrolltoProductSection('P&S')">Pastries & Snacks</a>
+        </div>
+      </div>
+
+      <RouterLink to="/about">About Us</RouterLink>
+      <RouterLink to="/partnerships">Partnerships</RouterLink>
+      <RouterLink to="/gallery">Gallery</RouterLink>
+    </div>
+  </div>
+</template>
+
+
 <script setup>
 import { useRouter } from 'vue-router';
 
 const router = useRouter()
 
-const navigateTo = (routeName) => {
-    router.push({name: routeName})
+const scrolltoProductSection = async (id) => {
+  if (router.currentRoute.value.path !== '/products') {
+    await router.push('/products')
+  }
+
+  setTimeout(() => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: 'smooth',
+    })
+  })
 }
 
 </script>
 
+<style scoped>
+.navbar {
+  position: fixed;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(101, 11, 11);
+  color: white;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+
+    img {
+      width: 100px;
+      height: 60px;
+    }
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 20px;
+    gap: 20px;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .submenu {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 120px;
+  min-height: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  gap: 10px;
+}
+
+
+.dropdown:hover .submenu {
+  display: flex;
+}
+
+.dropdown .submenu a {
+  color: #29452c;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 10px;
+
+    .logo {
+      justify-content: center;
+      padding: 0;
+    }
+
+    .menu {
+      justify-content: center;
+      flex-wrap: wrap;
+      font-size: 14px;
+      padding: 10px;
+      gap: 12px;
+    }
+  }
+
+  .dropdown .submenu {
+    display: flex;
+  }
+}
+</style>
 
 
 
-
-<template>
-    <header>
-        <div class="NavLogo">Kape ni Emman</div>
-        <nav class="nav-links">
-            <button @click="navigateTo('home')" class="nav-btn">Home</button>
-            <button @click="navigateTo('about')" class="nav-btn">About</button>
-            <button @click="navigateTo('partnership')" class="nav-btn">Partnership</button>
-            <button @click="navigateTo('gallery')" class="nav-btn">Gallery</button>
-            <button @click="navigateTo('menu')" class="nav-btn">Menu</button>
-        </nav>
-    </header>
-</template>
