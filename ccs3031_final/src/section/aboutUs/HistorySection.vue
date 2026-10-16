@@ -1,47 +1,125 @@
 <template>
-    <section class="history">
-        <div class="historytext">
-            <h1>history</h1>
+  <section class="history" id="history">
+    <div class="container">
+      <div class="top">
+        <p class="small">Our Story</p>
+        <h1>History</h1>
+        <p class="intro">
+          Kape ni Emman was started by a Christian couple who stepped out in faith because of their shared
+          passion for coffee and ministry.
+        </p>
+        <p class="owners">— Michael and Jenny Molina, owners</p>
+      </div>
+      <div class="bottom">
+        <div class="step">
+          <p class="number">1</p>
+          <h2>The Name</h2>
+          <p>
+            The café was first going to be called Café Immanuel, which means "God with us." They chose Kape
+            ni Emman instead, a name that fits their mix of traditional and modern brewing while keeping the
+            heart of their faith.
+          </p>
         </div>
-        <div class="story">
-            <div class="storytext">
-                <h1>Michael & Jenny Molina</h1>
-
-                <p>
-                    Kape ni Emman began with Michael and Jenny Molina, a Christian couple who stepped out
-                    in faith, trusting the Lord Jesus Christ, to bring together two things they love: coffee
-                    and ministry.
-                </p>
-
-                <p>
-                    At first, the café was going to be called Café Immanuel, which means "God with us."
-                    They later settled on Kape ni Emman, a name that fits their mix of traditional and
-                    modern brewing while keeping their faith at its center.
-                </p>
-
-                <p>
-                    There were no balloons or big celebrations on opening day. Instead, the café started
-                    simply, with a prayer and a dedication to God. Since then, Colossians 3:23 has guided
-                    everything they do, from greeting each guest warmly to making every cup with care.
-                </p>
-
-                <p>
-                    For Michael and Jenny, the café is more than a business. It's a calling and a way to
-                    minister through coffee. Along with good drinks, they hope to share God's Word, the love
-                    of Christ, and real fellowship with everyone who walks in. Each cup is an opportunity to
-                    grow faith and community together.
-                </p>
-
-                <p>
-                    Running a small coffee shop takes courage, sacrifice, and a lot of heart. Still, they
-                    believe nothing given to the Lord is ever wasted. The café isn't sustained by their own
-                    strength, but by the strength God provides.
-                </p>
-
-                <p class="tagline">
-                    <em>Serving, not impressing—grounded in Colossians 3:23.</em>
-                </p>
-            </div>
+        <div class="step">
+          <p class="number">2</p>
+          <h2>A Quiet Opening</h2>
+          <p>
+            There were no balloons or big celebrations. The café opened with a simple prayer and a
+            dedication to God.
+          </p>
         </div>
-    </section>
+        <div class="step">
+          <p class="number">3</p>
+          <h2>Two Years of Grace</h2>
+          <p>
+            On its second anniversary, the café had become a gathering place full of conversations, shared
+            prayers and comforted hearts. The owners continue to serve with the same heart they started with.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
+
+<style scoped>
+.history {
+  max-width: 100vw;
+  scroll-margin-top: 100px;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+
+  .top {
+    background-color: #7a4a2b;
+    color: #f8f0dc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 40px;
+    gap: 15px;
+
+    .small {
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #e8c08a;
+    }
+    h1 {
+      font-size: 48px;
+    }
+    .intro {
+      max-width: 750px;
+      font-size: 22px;
+    }
+    .owners {
+      font-style: italic;
+      color: #e8c08a;
+    }
+  }
+  .bottom {
+    background-color: #f1e6cc;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px;
+    gap: 20px;
+  }
+  .step {
+    background-color: #f8f0dc;
+    border: 1px solid #7a4a2b;
+    border-top: 6px solid #7a4a2b;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .number {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #5d1929;
+      color: #f8f0dc;
+      font-size: 22px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    h2 {
+      color: #7a4a2b;
+      font-size: 26px;
+    }
+    p {
+      font-size: 18px;
+      color: #6e5747;
+    }
+  }
+}
+</style>

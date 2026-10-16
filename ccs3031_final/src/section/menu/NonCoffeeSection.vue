@@ -1,0 +1,9 @@
+<template>
+    <section>
+        <div>
+            <h1>
+                noncoffee
+            </h1>
+        </div>
+    </section>
+</template>

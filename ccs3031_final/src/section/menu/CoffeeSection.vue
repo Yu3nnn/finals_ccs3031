@@ -1,0 +1,9 @@
+<template>
+    <section>
+        <div>
+            <h1>
+                coffee
+            </h1>
+        </div>
+    </section>
+</template>
