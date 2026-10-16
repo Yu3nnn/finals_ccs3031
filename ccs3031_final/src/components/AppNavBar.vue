@@ -62,14 +62,14 @@ const scrolltoProductSection = async (id) => {
     gap: 10px;
 
     img {
-<<<<<<< Updated upstream
+
       width: 100px;
       height: 60px;
-=======
+
       width: 80px;
       height: 100px;
       
->>>>>>> Stashed changes
+
     }
   }
 
