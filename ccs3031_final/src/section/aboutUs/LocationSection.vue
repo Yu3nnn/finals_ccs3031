@@ -19,11 +19,7 @@
           </div>
         </div>
         <div class="map">
-          <iframe
-            src="https://maps.google.com/maps?q=10.7312094,122.5522986&z=17&output=embed"
-            title="Map of Kape ni Emman"
-            loading="lazy"
-          ></iframe>
+          <iframe src="https://maps.google.com/maps?q=10.7312094,122.5522986&z=17&output=embed"></iframe>
         </div>
       </div>
     </div>
@@ -44,12 +40,11 @@
   gap: 10px;
 
   .left {
-    background-color: #7a4a2b;
-    color: #f8f0dc;
+    background-color: #b3282d;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
     padding: 40px;
     gap: 20px;
 
@@ -57,7 +52,7 @@
       font-size: 14px;
       font-weight: bold;
       letter-spacing: 2px;
-      color: #e8c08a;
+      color: #ffb3b3;
     }
     h1 {
       font-size: 48px;
@@ -67,7 +62,7 @@
     }
   }
   .right {
-    background-color: #f1e6cc;
+    background-color: #f0e2c6;
     display: flex;
     flex-direction: column;
     padding: 40px;
@@ -79,8 +74,8 @@
     gap: 20px;
   }
   .right-item {
-    background-color: #f8f0dc;
-    border-left: 5px solid #7a4a2b;
+    background-color: #a8231f;
+    border-left: 5px solid #7d1a17;
     border-radius: 5px;
     padding: 20px 30px;
     display: flex;
@@ -88,22 +83,22 @@
     gap: 5px;
 
     h2 {
-      color: #7a4a2b;
+      color: #ffffff;
       font-size: 26px;
       margin-bottom: 5px;
     }
     p {
       font-size: 18px;
-      color: #6e5747;
+      color: #ffffff;
     }
   }
   .map {
     flex: 1;
     min-height: 300px;
-    border: 2px solid #7a4a2b;
+    border: 2px solid #a8231f;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0px 5px #8a7560;
+    box-shadow: 0px 5px #7d1a17;
 
     iframe {
       width: 100%;
@@ -111,6 +106,40 @@
       min-height: 300px;
       border: 0;
       display: block;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    min-height: auto;
+
+    .left {
+      padding: 30px 20px;
+
+      h1 {
+        font-size: 36px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .right {
+      padding: 20px;
+    }
+    .info {
+      grid-template-columns: 1fr;
+    }
+    .right-item {
+      padding: 15px 20px;
+
+      h2 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 16px;
+      }
     }
   }
 }

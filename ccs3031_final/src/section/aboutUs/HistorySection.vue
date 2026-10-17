@@ -2,7 +2,7 @@
   <section class="history" id="history">
     <div class="container">
       <div class="top">
-        <p class="small">Our Story</p>
+        <p class="small">OUR STORY</p>
         <h1>History</h1>
         <p class="intro">
           Kape ni Emman was started by a Christian couple who stepped out in faith because of their shared
@@ -55,8 +55,8 @@
   gap: 10px;
 
   .top {
-    background-color: #7a4a2b;
-    color: #f8f0dc;
+    background-color: #b3282d;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,8 +68,7 @@
       font-size: 14px;
       font-weight: bold;
       letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #e8c08a;
+      color: #ffb3b3;
     }
     h1 {
       font-size: 48px;
@@ -80,20 +79,20 @@
     }
     .owners {
       font-style: italic;
-      color: #e8c08a;
+      color: #ffb3b3;
     }
   }
   .bottom {
-    background-color: #f1e6cc;
+    background-color: #f0e2c6;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 40px;
     gap: 20px;
   }
   .step {
-    background-color: #f8f0dc;
-    border: 1px solid #7a4a2b;
-    border-top: 6px solid #7a4a2b;
+    background-color: #a8231f;
+    border: 1px solid #7d1a17;
+    border-top: 6px solid #7d1a17;
     border-radius: 10px;
     padding: 30px;
     display: flex;
@@ -104,8 +103,8 @@
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      background-color: #5d1929;
-      color: #f8f0dc;
+      background-color: #ffffff;
+      color: #a8231f;
       font-size: 22px;
       font-weight: bold;
       display: flex;
@@ -113,12 +112,41 @@
       justify-content: center;
     }
     h2 {
-      color: #7a4a2b;
+      color: #ffffff;
       font-size: 26px;
     }
     p {
       font-size: 18px;
-      color: #6e5747;
+      color: #ffffff;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    .top {
+      padding: 40px 20px;
+
+      h1 {
+        font-size: 36px;
+      }
+      .intro {
+        font-size: 18px;
+      }
+    }
+    .bottom {
+      grid-template-columns: 1fr;
+      padding: 20px;
+    }
+    .step {
+      padding: 20px;
+
+      h2 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 16px;
+      }
     }
   }
 }

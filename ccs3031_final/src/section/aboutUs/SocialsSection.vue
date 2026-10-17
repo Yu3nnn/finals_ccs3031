@@ -37,7 +37,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #f1e6cc;
+  align-items: center;
+  background-color: #f0e2c6;
   padding: 40px 20px;
   gap: 30px;
 
@@ -49,11 +50,12 @@
     text-align: center;
 
     h1 {
-      color: #7a4a2b;
+      color: #a8231f;
       font-size: 42px;
     }
     p {
       font-size: 20px;
+      color: #555555;
     }
   }
   .list {
@@ -61,28 +63,47 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     max-width: 1000px;
-    margin: 0 auto;
     width: 100%;
   }
   .item {
-    background-color: #f8f0dc;
+    background-color: #a8231f;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #7a4a2b;
+    border: 1px solid #7d1a17;
     border-radius: 10px;
     padding: 30px 20px;
     gap: 10px;
-    color: inherit;
+    color: #ffffff;
     text-decoration: none;
 
     img {
       width: 70px;
-      height: 70px;
-      object-fit: contain;
     }
     h2 {
-      color: #7a4a2b;
+      color: #ffffff;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-height: 100vh;
+    padding: 100px 20px 40px 20px;
+
+    .text {
+      h1 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .list {
+      grid-template-columns: 1fr;
+    }
+    .item {
+      padding: 20px;
     }
   }
 }
