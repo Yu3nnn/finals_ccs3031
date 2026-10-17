@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="map">
-          <iframe src="https://maps.google.com/maps?q=10.7312094,122.5522986&z=17&output=embed"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.042450114423!2d122.5522986!3d10.7312094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aee5142901641d%3A0xf55dde12c759e447!2skape%20ni%20emman!5e0!3m2!1sen!2sph!4v1792243776056!5m2!1sen!2sph"></iframe>
         </div>
       </div>
     </div>
