@@ -115,7 +115,7 @@
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    padding: 120px 20px 10px 20px;
+    padding: 160px 40px 40px 40px;
     gap: 10px;
     text-align: center;
 

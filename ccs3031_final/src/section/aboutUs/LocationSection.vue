@@ -29,23 +29,23 @@
 <style scoped>
 .location {
   max-width: 100vw;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 140px;
 }
 
 .container {
   width: 100%;
-  min-height: calc(100vh - 100px);
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 10px;
 
   .left {
-    background-color: #b3282d;
+    background-color: #7d1a17;
     color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px;
+    padding: 160px 40px 40px 40px;
     gap: 20px;
 
     .small {
@@ -65,7 +65,7 @@
     background-color: #f0e2c6;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 160px 40px 40px 40px;
     gap: 20px;
   }
   .info {

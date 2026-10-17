@@ -44,7 +44,7 @@
 <style scoped>
 .history {
   max-width: 100vw;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 140px;
 }
 
 .container {
@@ -61,7 +61,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 50px 40px;
+    padding: 160px 40px 40px 40px;
     gap: 15px;
 
     .small {
@@ -86,7 +86,7 @@
     background-color: #f0e2c6;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 40px;
+    padding: 30px 40px 40px 40px;
     gap: 20px;
   }
   .step {
