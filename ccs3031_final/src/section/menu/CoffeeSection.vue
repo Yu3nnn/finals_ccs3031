@@ -19,6 +19,7 @@
           <p class="desc">A slightly crispy waffle with maple syrup & softened butter</p>
           <p class="price">₱170.00</p>
         </div>
+        
         <div class="item">
           <img src="@/assets/image/cinnamon-crisp.png" alt="Cinnamon Crisp" />
           <h3>Cinnamon Crisp</h3>
