@@ -1,11 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AppFooter from './components/AppFooter.vue';
+import AppNavBar from './components/AppNavBar.vue';
+
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
-</template>
+    <div class="app-wrapper">
+ <AppNavBar/>
+        <main class="main-content">
+ <RouterView/>
+ </main>
 
-<style scoped></style>
+ <AppFooter />
+ </div>
+</template>
