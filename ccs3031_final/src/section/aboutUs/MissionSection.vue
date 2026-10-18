@@ -62,7 +62,7 @@
   .right {
     background-color: #e6eadb;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 3, 1fr;
     padding: 40px;
     gap: 20px;
   }
