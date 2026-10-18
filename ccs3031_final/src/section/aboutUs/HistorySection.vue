@@ -121,7 +121,6 @@
     }
   }
 }
-
 @media (max-width: 768px) {
   .container {
     .top {
