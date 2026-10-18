@@ -38,7 +38,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f0e2c6;
+  background-color: #e6eadb;
   padding: 40px 20px;
   gap: 30px;
 

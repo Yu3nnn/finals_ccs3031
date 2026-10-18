@@ -60,7 +60,7 @@
     }
   }
   .right {
-    background-color: #f0e2c6;
+    background-color: #e6eadb;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     padding: 40px;
